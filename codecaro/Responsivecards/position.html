@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        3 lines (115 sloc)  1.78 KB
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 60px;
+}
+/* h1::first-letter{
+    color: blueviolet;
+    
+} */
+h1::first-line{
+    color: tomato;
+}
+h1::selection{
+    background-color: black;
+    color: white;
+}
+/* pseudo elements
+    1. first line
+    2. first letter
+    3. before
+    4. after
+    5. marker
+    6. selection
+*/
+p{
+    font-size: 40px;
+    text-align: center;
+}
+/* p::before{
+    content: 'Note: ';
+}
+p::after{
+    content: '!';
+} */
+.container{
+    width: 400px;
+    margin: 60px auto;
+}
+.card{
+    width: 200px;
+    height: 100px;
+    border-radius: 12px;
+    margin: 10px;
+}
+.card p{
+    font-size: 16px;
+}
+.bg1{
+    background-color: rgb(214, 255, 255);
+    color: teal;
+}
+.bg2{
+    background-color: rgb(255, 201, 193);
+    color: tomato;
+}
+.value::before{
+    content: '0';
+}
+/* pseudo classes */
+/* 
+    1. hover
+    2. focus
+    3. first child
+    4. last child
+    5. nth child
+*/
+
+.btn{
+    border: 2px solid black;
+    padding: 18px 44px;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/* .btn:hover{
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    padding: 18px 55px;
+} */
+input{
+    width: 100%;
+    border: 1px solid lightgray;
+    font-size: 17px;
+    padding: 15px;
+    border-radius: 12px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid dodgerblue
+    
+    ;
+}
+
+ul li{
+    font-size: 28px;
+}
+ ul li:first-child{
+    color: red;
+}
+ul li:last-child{
+    color: green;
+}
+ul li:nth-child(3){
+    color: blueviolet;
+} 
+
+/* ul li:nth-child(even){
+    color: blueviolet;
+} */
+
+li::marker{
+    color: green;
+}
+        .card{
+    width: 600px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+}
+.btn{
+    background-color: #e44232;
+    color: white;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 24px;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+    padding: 16px 36px;
+    border: none;
+    border-radius: 40px;
+}
+.ad{
+    position: sticky;
+    top:0;
+    width: 600px;
+    margin: 10px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.ad-img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.rel-div{
+    position: relative;
+    background-color: blueviolet;
+    height: 400px;
+    width: 600px;
+    border-radius: 16px;
+    margin: 50px auto
+}
+
+.abs-div{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    background-color: white;
+    margin: 24px;
+    right: 0;
+    bottom: 0;
+}
+.card-header{
+    position: relative;
+}
+.tag{
+    position:absolute;
+    top:0;
+    
+    background-color: #fff;
+    padding: 4px 18px;
+    border-radius: 40px;
+    font-size: 14px;
+    margin:10px
+}
+.likes{
+    position:absolute;
+    bottom:0;
+    
+    background-color: #fff;
+    padding: 4px 18px;
+    border-radius: 40px;
+    font-size: 14px;
+    margin:10px
+}
+.hero{
+    position: relative;
+    width: 600px;
+    border-radius: 16px;
+    margin: 10px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero-img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.hero-content{
+    text-align: center;
+    margin: 24px;
+    position: absolute;
+    top:0;
+    color: white;
+}
+.icon{
+    
+}
+    </style>
+</head>
+<body>
+     <h1>Welcome to the codekaro masterclass</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus praesentium veniam illo fugit explicabo eos, repellendus adipisci est reprehenderit debitis eum delectus esse quo, incidunt exercitationem iste. Cumque, officia nulla.</p> -->
+
+    <p>This is an important message</p>
+    <p>This is another important message</p>
+
+   <div class="container">
+    <div class="card bg1">
+        <p>This month</p>
+        <p class="value"></p>
+    </div>
+    <div class="card bg2">
+        <p>Last month</p>
+        <p class="value"></p>
+    </div><input type="text" placeholder="Enter your name">
+<button class="btn">Explore the psedo classes</button> -->
+
+<ul>
+    <li>Bhavna</li>
+    <li>Ashish</li>
+    <li>yash</li>
+    <li>Nayan</li>
+    <li>Kapoor</li>
+    <li>Pankaj</li>
+    <li>Awadh</li>
+</ul>
+
+</div> 
+
+    <div class="hero">
+        <img src="http://source.unsplash.com/1600x800/?india" class="hero-img" alt="">
+        <div class="hero-content">
+            <div class="icon">🍿</div>
+            <h1>Explore your Feeds now</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae possimus alias repellat incidunt excepturi officia accusantium odio qui.</p>
+            <button class="btn-white">Explore Now</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <img src="http://source.unsplash.com/1600x600/?diwali" class="card-img" alt="">
+            <p class="tag">India</p>
+            <p class="likes">Likes 3904920</p>
+        </div>
+        
+        <h3>This is a detailed view of New York</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni ipsa recusandae nostrum soluta! Velit obcaecati dicta aliquam a totam, fugit consequatur?</p>
+    </div>
+
+    <div class="ad">
+        <div class="card-header">
+            <img src="http://source.unsplash.com/1600x100/?ad" class="ad-img" alt="">
+            <p class="tag">Feed Ad</p>
+        </div>
+
+    </div>
+    <div class="card">
+        <img src="http://source.unsplash.com/1600x600/?paris" class="card-img" alt="">
+        <h3>This is a detailed view of New York</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni ipsa recusandae nostrum soluta! Velit obcaecati dicta aliquam a totam, fugit consequatur?</p>
+    </div>
+
+    <div class="card">
+        <img src="http://source.unsplash.com/1600x600/?london" class="card-img" alt="">
+        <h3>This is a detailed view of New York</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni ipsa recusandae nostrum soluta! Velit obcaecati dicta aliquam a totam, fugit consequatur?</p>
+    </div>
+
+
+    <!-- <div class="rel-div">
+        <div class="abs-div"></div>
+    </div> -->
+    <button class="btn">Create Post</button>
+</body>
+</html>
